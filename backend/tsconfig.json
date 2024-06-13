@@ -1,0 +1,71 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "strict": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "strictPropertyInitialization": false,
+    "baseUrl": ".",
+    "outDir": "./dist",
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/interfaces/*",
+      "./tests/interfaces/*"
+    ],
+    "lib": [
+      "dom",
+      "es2017"
+    ],
+    "paths": {
+      "@controllers/*": [
+        "./src/controllers/*"
+      ],
+      "@databases/*": [
+        "./src/databases/*"
+      ],
+      "@interfaces/*": [
+        "./src/interfaces/*"
+      ],
+      "@middlewares/*": [
+        "./src/middlewares/*"
+      ],
+      "@modules/*": [
+        "./src/modules/*"
+      ],
+      "@repositories/*": [
+        "./src/repositories/*"
+      ],
+      "@services/*": [
+        "./src/services/*"
+      ],
+      "@utils/*": [
+        "./src/utils/*"
+      ],
+      "@validations/*": [
+        "./src/validations/*"
+      ],
+      "@tests/*": [
+        "./tests/*"
+      ]
+    },
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": false,
+    "incremental": false,
+    "resolveJsonModule": true,
+    "isolatedModules": true
+  },
+  "include": [
+    "**/*.ts"
+  ]
+}
